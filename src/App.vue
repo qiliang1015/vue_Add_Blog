@@ -1,32 +1,35 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <HdView></HdView>
+    <div class="main">
+      <ShowView></ShowView>
     </div>
-    <router-view/>
+    <FtView></FtView>
   </div>
 </template>
 
-<style lang="less">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+<script>
+import HdView from "./components/HdView"
+import FtView from "./components/FtView"
+import ShowView from "./components/ShowView"
+export default {
+  components:{
+    HdView,
+    FtView,
+    ShowView
   }
 }
+</script>
+
+<style lang="less">
+  *{padding: 0;margin: 0;font-family: "微软雅黑";box-sizing: border-box;}
+  a{text-decoration: none;}
+  ul,ol{list-style: none;}
+
+  #app{
+    width: 1000px; border: 1px solid #41B883; margin: 0 auto;
+  }
+  .main{
+    min-height: 200px;
+  }
 </style>
