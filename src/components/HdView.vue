@@ -8,8 +8,8 @@
       </div>
     </div>
     <div class="nav">
-      <a href="#" class="active">博客列表</a>
-      <a href="#">添加博客</a>
+      <router-link to="/show">博客列表</router-link>
+      <router-link to="/add">添加博客</router-link>
     </div>
   </div>
 </template>
@@ -21,7 +21,7 @@ export default {};
 <style lang="less" scoped>
 .header {
   height: 80px;
-  background: #41b883;
+  background: #9B9CD2;
   display: flex;
   justify-content: space-between;
   align-items: center;

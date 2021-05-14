@@ -77,6 +77,9 @@ export default {
 <style lang="less" scoped>
     .ShowView{
         padding: 30px 30px;
+        // background-image: url('../assets/images/cool-background.png');
+        // background-repeat: no-repeat;
+        // background-size: cover;
     }
     .pageGroup{
         padding: 40px;

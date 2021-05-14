@@ -64,7 +64,7 @@ export default {
             }
         }
         .center{
-            background: #f6f6f6;
+            background: #fff7f7;
             border-radius: 5px;
             padding: 15px 10px;
             font-size: 18px;

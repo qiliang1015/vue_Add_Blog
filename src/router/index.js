@@ -1,12 +1,23 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
+import ShowView from "@/components/ShowView"
+import AddBlog from "@/components/AddBlog"
+
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
+    component:ShowView
+  },
+  {
+    path:'/add',
+    component:AddBlog
+  },
+  {
+    path:'/show',
+    component:ShowView
   },
 ]
 

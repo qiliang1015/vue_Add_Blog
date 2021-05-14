@@ -2,7 +2,7 @@
   <div id="app">
     <HdView></HdView>
     <div class="main">
-      <ShowView></ShowView>
+      <router-view></router-view>
     </div>
     <FtView></FtView>
   </div>
@@ -11,12 +11,10 @@
 <script>
 import HdView from "./components/HdView"
 import FtView from "./components/FtView"
-import ShowView from "./components/ShowView"
 export default {
   components:{
     HdView,
-    FtView,
-    ShowView
+    FtView
   }
 }
 </script>
@@ -26,10 +24,13 @@ export default {
   a{text-decoration: none;}
   ul,ol{list-style: none;}
 
+
   #app{
     width: 1000px; border: 1px solid #41B883; margin: 0 auto;
+    
   }
   .main{
     min-height: 200px;
+    
   }
 </style>

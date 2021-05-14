@@ -15,15 +15,15 @@ export default {
 <style lang="less" scoped>
     .footer{
         height: 70px;
-        background: #2F6f52;
-        color: white;
+        background: #BEFFDB;
+        color: rgb(83, 81, 81);
         display: flex;
         justify-content: center;
         align-items: center;
         div{
           opacity: 0.8;
           a{
-            color: white;
+            color: rgb(83, 81, 81);
             &:hover{
               text-decoration: underline;
             }
